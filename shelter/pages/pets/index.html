@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <title>Pets</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="../main/index.html">
+                        <h1 class="logo__title">Cozy House</h1>
+                        <span class="logo__subtitle">Shelter for pets in Boston</span>
+                    </a>
+                </div>
+                <nav class="header__navbar">
+                    <span class="burger">
+                        <span class="burger__line"></span>
+                    </span>
+                    <ul class="navbar">
+                        <li><a href="../main/index.html" class="navbar__link">About the shelter</a></li>
+                        <li><a href="#" class="navbar__link active__link">Our pets</a></li>
+                        <li><a href="../main/index.html#help" class="navbar__link">Help the shelter</a></li>
+                        <li><a href="#footer" class="navbar__link">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section section__grey" id="our-friends">
+            <div class="wrapper">
+                <div class="section__inner-our-friends">
+                    <h3 class="section__title section__title-center">Our friends who<br> are looking for a house</h3>
+                    <div class="our-friends__slider">
+                        <ul class="cards__slider">
+                            <li class="card">
+                                <img src="../../assets/images/katrine.png" alt="pet-katrine" class="img__pet">
+                                <p class="card__title">Katrine</p>
+                                <a href="#" class="btn btn-white">Learn more</a>
+                            </li>
+                            <li class="card">
+                                <img src="../../assets/images/jennifer.png" alt="pet-jennifer" class="img__pet">
+                                <p class="card__title">Jennifer</p>
+                                <a href="#" class="btn btn-white">Learn more</a>
+                            </li>
+                            <li class="card">
+                                <img src="../../assets/images/woody.png" alt="pet-woody" class="img__pet">
+                                <p class="card__title">Woody</p>
+                                <a href="#" class="btn btn-white">Learn more</a>
+                            </li>
+                            <li class="card">
+                                <img src="../../assets/images/sophia.png" alt="pet-woody" class="img__pet">
+                                <p class="card__title">Sophia</p>
+                                <a href="#" class="btn btn-white">Learn more</a>
+                            </li>
+                            <li class="card">
+                                <img src="../../assets/images/timmy.png" alt="pet-woody" class="img__pet">
+                                <p class="card__title">Timmy</p>
+                                <a href="#" class="btn btn-white">Learn more</a>
+                            </li>
+                            <li class="card">
+                                <img src="../../assets/images/charly.png" alt="pet-woody" class="img__pet">
+                                <p class="card__title">Charly</p>
+                                <a href="#" class="btn btn-white">Learn more</a>
+                            </li>
+                            <li class="card">
+                                <img src="../../assets/images/scarlet.png" alt="pet-woody" class="img__pet">
+                                <p class="card__title">Scarlet</p>
+                                <a href="#" class="btn btn-white">Learn more</a>
+                            </li>
+                            <li class="card">
+                                <img src="../../assets/images/freddie.png" alt="pet-woody" class="img__pet">
+                                <p class="card__title">Freddie</p>
+                                <a href="#" class="btn btn-white">Learn more</a>
+                            </li>
+                        </ul>
+                        <div class="popup">
+                            <div class="popup__body">
+                                <button class="btn-round btn-round__popup"></button>
+                                <div class="popup__inner">
+                                    <img src="../../assets/images/jennifer.png" alt="pet-jennifer" class="popup__img">
+                                    <div class="popup__info">
+                                        <h3 class="section__title popup__title">Jennifer</h3>
+                                        <h4 class="popup__subtitle">Dog - Labrador</h4>
+                                        <p class="popup__text">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house
+                                            if she has all of her favorite toys.</p>
+                                        <ul class="popup__list">
+                                            <li><b>Age:</b> 2 months</li>
+                                            <li><b>Inoculations:</b> none</li>
+                                            <li><b>Diseases:</b> none</li>
+                                            <li><b>Parasites:</b> none</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__controls">
+                            <button class="btn-round btn-round__slider" disabled="">&lt;&lt;</button>
+                            <button class="btn-round btn-round__slider" disabled="">&lt;</button>
+                            <span class="btn-round btn-round__slider page">1</span>
+                            <button class="btn-round btn-round__slider">&gt;</button>
+                            <button class="btn-round btn-round__slider">&gt;&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="wrapper">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <div class="contacts">
+                        <h3 class="footer__title">For questions and suggestions</h3>
+                        <a href="mailto:email@shelter.com" class="footer__link footer__link-email">email@shelter.com</a>
+                        <a href="tel:+136745677554" class="footer__link footer__link-tel">+13 674 567 75 54</a>
+                    </div>
+                    <div class="address">
+                        <h3 class="footer__title">We are waiting for your visit</h3>
+                        <a href="https://www.google.com/maps/@52.0880842,23.6328483,12z/data=!5m1!1e1?hl=ru-RU" class="footer__link footer__link-address1" target="_blank">1 Central Street, Boston (entrance from the store)</a>
+                        <a href="https://www.google.com/maps/@52.0880842,23.6328483,12z/data=!5m1!1e1?hl=ru-RU" class="footer__link footer__link-address" target="_blank">18 South Park, London </a>
+                    </div>
+                </div>
+                <img class="footer-puppy" src="../../assets/images/footer-puppy.png" alt="footer-puppy">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

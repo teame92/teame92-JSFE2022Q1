@@ -241,8 +241,9 @@ body {
 }
 
 .puppy {
-    width: 61%;
+    width: 100%;
     max-width: 698px;
+    flex-shrink: 0;
 }
 
 .section .wrapper {

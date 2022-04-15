@@ -781,3 +781,110 @@ body {
     width: 100%;
     max-width: 300px;
 }
+
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        padding: 0 30px;
+    }
+    .header__inner {
+        padding: 30px 0;
+    }
+    .section__house .wrapper {
+        padding-top: 150px;
+    }
+    .section__inner-house {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .section__header-house {
+        padding-bottom: 100px;
+        display: flex;
+        width: 100%;
+        max-width: 460px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .section__title-house {
+        width: 89%;
+    }
+    .section__subtitle {
+        width: 100%
+    }
+    .section__header-house a {
+        margin: 0 auto;
+    }
+    .puppy {
+        width: 80.4%;
+    }
+    .section__inner-about {
+        padding: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .pets {
+        width: 100%;
+    }
+    .section__header-about {
+        width: 100%;
+        max-width: 430px;
+        margin: 0 0 80px;
+    }
+    .section__inner-help {
+        padding: 0;
+    }
+    .help__title {
+        width: 53%;
+    }
+    .help__list {
+        padding-right: 0;
+    }
+    .list {
+        width: 100%;
+        justify-content: space-between;
+        gap: 55px 59px;
+    }
+    .list__element {
+        width: 27%;
+    }
+    .section__inner-donation {
+        flex-direction: column-reverse;
+    }
+    .donation__info {
+        width: 54%;
+        margin-bottom: 60px;
+    }
+    .credit-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    .donation__img {
+        width: 100%;
+    }
+    .footer__inner {
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__info {
+        width: 100%;
+        padding: 0 34px;
+    }
+    .contacts,
+    .address {
+        margin: 0 0 65px;
+    }
+    .contacts {
+        width: 100%;
+        max-width: 279px;
+    }
+    .footer__link-email {
+        margin: 40px 0;
+    }
+    .address {
+        width: 100%;
+        max-width: 302px;
+    }
+    .footer__link-address1 {
+        margin: 33px 0;
+    }
+}

@@ -888,3 +888,293 @@ body {
         margin: 33px 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .cards__slider {
+        width: 82%;
+    }
+    .cards__slider li:nth-child(3) {
+        display: none;
+    }
+    .popup__body {
+        height: 350px;
+        max-width: 630px;
+        left: 0;
+    }
+    .popup__inner {
+        padding-right: 9px;
+    }
+    .popup__img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 9px;
+    }
+    .popup__info {
+        margin-top: 10px;
+    }
+    .popup__text {
+        width: 100%;
+        font-size: 13px;
+        margin: 20px 0;
+    }
+    .popup__list li {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+    .header__navbar {
+        margin-right: 53px;
+    }
+    .navbar {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        position: relative;
+        z-index: 100;
+    }
+    .burger__click {
+        transform: rotate(-90deg);
+    }
+    .burger::after,
+    .burger::before {
+        content: "";
+        height: 2px;
+        background: #F1CDB3;
+    }
+    .burger__line {
+        height: 2px;
+        background: #F1CDB3;
+    }
+    .section__header-house {
+        padding-bottom: 105px;
+        align-items: center;
+    }
+    .section__title-house {
+        width: 87%;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+    .section__header-house .section__subtitle {
+        margin: 42px 0 42px;
+    }
+    .section__subtitle {
+        text-align: center;
+    }
+    .section .wrapper {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+    .section__title {
+        font-size: 25px;
+        text-align: center;
+    }
+    .section__header-about {
+        margin: 0 0 42px;
+    }
+    .our-friends__slider {
+        margin: 42px 0;
+    }
+    .cards__slider {
+        justify-content: center;
+    }
+    .cards__slider li:nth-child(2) {
+        display: none;
+    }
+    .popup__body {
+        height: 341px;
+        max-width: 240px;
+    }
+    .btn-round__popup {
+        right: -32px;
+    }
+    .popup__inner {
+        padding: 0;
+    }
+    .popup__img {
+        display: none;
+    }
+    .popup__info {
+        width: 100%;
+        margin: 10px;
+    }
+    .popup__title {
+        font-size: 35px;
+    }
+    .popup__subtitle {
+        text-align: center;
+    }
+    .popup__text {
+        margin: 20px 0 24px;
+    }
+    .donation__info {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 42px;
+        text-align: -webkit-center;
+    }
+    .donation__title {
+        width: 82%;
+        margin: 0 auto;
+    }
+    .donation__subtitle {
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+    .donation__info__text {
+        text-align: justify;
+    }
+    .footer__info {
+        align-items: center;
+        flex-direction: column;
+    }
+    .contacts,
+    .address {
+        margin: 0 0 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .list__element {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .credit-card {
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.05em;
+        justify-content: center;
+    }
+    .list {
+        gap: 30px;
+    }
+    .list__element {
+        width: 44%;
+    }
+    .list li:nth-child(1) span {
+        width: 39.88px;
+        height: 50px;
+    }
+    .list li:nth-child(2) span {
+        width: 49.96px;
+        height: 50px;
+    }
+    .list li:nth-child(3) span {
+        width: 50px;
+        height: 50px;
+    }
+    .list li:nth-child(4) span {
+        width: 50px;
+        height: 47.35px;
+    }
+    .list li:nth-child(5) span {
+        width: 26.09px;
+        height: 50px;
+    }
+    .list li:nth-child(6) span {
+        width: 50px;
+        height: 45.13px;
+    }
+    .list li:nth-child(7) span {
+        width: 50px;
+        height: 50px;
+    }
+    .list li:nth-child(8) span {
+        width: 50px;
+        height: 43.7px;
+    }
+    .list li:nth-child(9) span {
+        width: 46.91px;
+        height: 50px;
+    }
+    .element__title {
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 110%;
+    }
+    .footer__info {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .puppy {
+        width: 100%;
+        max-width: 260px;
+    }
+    .section__header-about {
+        margin: 0 0 42px;
+        text-align: justify;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+    .about__title {
+        width: 100%;
+    }
+    .pets {
+        max-width: 260px;
+    }
+    .our-friends__slider {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .btn-round__slider {
+        order: 1;
+    }
+    .btn-round__slider-next {
+        order: 2;
+        margin-left: 80px;
+    }
+    .cards__slider {
+        order: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .section__inner-help {
+        padding: 0 5px;
+    }
+    .help__title {
+        width: 90%;
+    }
+    .help__list {
+        margin-top: 42px;
+    }
+    .donation__img {
+        max-width: 260px;
+    }
+    .footer__info {
+        padding: 0;
+    }
+    .footer__title {
+        font-size: 25px;
+        text-align: center;
+    }
+    .address .footer__title {
+        font-size: 25px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer__link-address1 {
+        margin: 40px 0;
+    }
+    .footer-puppy {
+        max-width: 260px;
+    }
+}

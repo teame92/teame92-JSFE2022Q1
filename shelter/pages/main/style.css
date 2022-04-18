@@ -106,12 +106,17 @@ body {
     padding: 60px 0;
 }
 
+.logo a {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo__title {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 110%;
+    line-height: 35px;
     color: #F1CDB3;
     letter-spacing: 0.06em;
     margin-bottom: 10px;
@@ -216,7 +221,7 @@ body {
 }
 
 .section__header-house .section__subtitle {
-    margin: 42px 0 52px;
+    margin: 42px 0 42px;
 }
 
 .btn {
@@ -783,7 +788,8 @@ body {
 }
 
 
-@media screen and (max-width: 1100px) {
+
+
     .wrapper {
         padding: 0 30px;
     }
@@ -828,7 +834,7 @@ body {
     .section__header-about {
         width: 100%;
         max-width: 430px;
-        margin: 0 0 80px;
+        margin: 0 0 78px;
     }
     .section__inner-help {
         padding: 0;
@@ -837,6 +843,7 @@ body {
         width: 53%;
     }
     .help__list {
+        width: 89%;
         padding-right: 0;
     }
     .list {
@@ -888,9 +895,6 @@ body {
     .footer__link-address1 {
         margin: 33px 0;
     }
-}
-
-@media screen and (max-width: 768px) {
     .cards__slider {
         width: 82%;
     }
@@ -923,12 +927,13 @@ body {
     }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 767px) {
     .wrapper {
         padding: 0 10px;
     }
     .header__navbar {
-        margin-right: 53px;
+        margin-right: 42px;
+        padding: 0;
     }
     .navbar {
         display: none;
@@ -968,7 +973,7 @@ body {
         letter-spacing: 0.06em;
     }
     .section__header-house .section__subtitle {
-        margin: 42px 0 42px;
+        margin: 41px 0 41px;
     }
     .section__subtitle {
         text-align: center;
@@ -983,6 +988,9 @@ body {
     }
     .section__header-about {
         margin: 0 0 42px;
+    }
+    .section__header-about>p:nth-child(2) {
+        margin: 23px 0;
     }
     .our-friends__slider {
         margin: 42px 0;
@@ -1046,16 +1054,8 @@ body {
     .contacts,
     .address {
         margin: 0 0 40px;
+        align-items: center;
     }
-}
-
-@media screen and (max-width: 550px) {
-    .list__element {
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 390px) {
     .credit-card {
         font-size: 15px;
         line-height: 110%;
@@ -1105,16 +1105,13 @@ body {
         height: 50px;
     }
     .element__title {
-        margin-top: 20px;
+        margin-top: 20.5px;
         font-size: 15px;
         line-height: 110%;
     }
     .footer__info {
         padding: 0;
     }
-}
-
-@media screen and (max-width: 320px) {
     .puppy {
         width: 100%;
         max-width: 260px;
@@ -1157,7 +1154,8 @@ body {
         width: 90%;
     }
     .help__list {
-        margin-top: 42px;
+        width: 100%;
+        margin-top: 40px;
     }
     .donation__img {
         max-width: 260px;
@@ -1174,6 +1172,12 @@ body {
         text-align: center;
         width: 90%;
         margin: 0 auto;
+    }
+    .address {
+        align-items: start;
+    }
+    .footer__link-email {
+        margin: 42px 0;
     }
     .footer__link-address1 {
         margin: 40px 0;

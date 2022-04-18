@@ -787,7 +787,9 @@ body {
     max-width: 300px;
 }
 
-@media screen and (max-width: 1279px) {
+
+
+
     .wrapper {
         padding: 0 30px;
     }

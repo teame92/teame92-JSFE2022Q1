@@ -366,8 +366,6 @@ button[disabled]:hover {
     left: 0;
     opacity: 0;
     visibility: hidden;
-    /* overflow-x: hidden;
-    overflow-y: auto; */
     transition: all 0.8s ease 0s;
 }
 
@@ -378,11 +376,8 @@ button[disabled]:hover {
 
 .popup__body {
     position: relative;
-    /* top: 52px; */
-    left: -52px;
     width: 100%;
     max-width: 952px;
-    height: 552px;
     margin: auto;
     background: #FAFAFA;
     border-radius: 9px;
@@ -408,17 +403,17 @@ button[disabled]:hover {
 .popup__inner {
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
 }
 
 .popup__img {
     width: 54%;
     max-width: 500px;
     height: 100%;
+    border-radius: 9px;
 }
 
 .popup__info {
-    width: 42%;
+    width: 41%;
     margin-top: 50px;
 }
 
@@ -578,6 +573,30 @@ button[disabled]:hover {
         margin: 30px 0 40px;
         justify-content: center;
     }
+    .popup__body {
+        height: 350px;
+        max-width: 630px;
+        left: 0;
+    }
+    .popup__inner {
+        padding-right: 9px;
+    }
+    .popup__img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 9px;
+    }
+    .popup__info {
+        margin-top: 10px;
+    }
+    .popup__text {
+        width: 100%;
+        font-size: 13px;
+        margin: 20px 0;
+    }
+    .popup__list li {
+        margin-bottom: 5px;
+    }
     .footer__inner {
         padding-top: 30px;
         flex-direction: column;
@@ -621,30 +640,6 @@ button[disabled]:hover {
         max-width: 270px;
         margin-bottom: 0;
     }
-    .popup__body {
-        height: 350px;
-        max-width: 630px;
-        left: 0;
-    }
-    .popup__inner {
-        padding-right: 9px;
-    }
-    .popup__img {
-        width: 100%;
-        max-width: 350px;
-        border-radius: 9px;
-    }
-    .popup__info {
-        margin-top: 10px;
-    }
-    .popup__text {
-        width: 100%;
-        font-size: 13px;
-        margin: 20px 0;
-    }
-    .popup__list li {
-        margin-bottom: 5px;
-    }
     .wrapper {
         padding: 0 10px;
     }
@@ -663,6 +658,9 @@ button[disabled]:hover {
         height: 22px;
         cursor: pointer;
         transition: 0.2s ease-in-out;
+    }
+    .burger__click {
+        transform: rotate(-90deg);
     }
     .burger::after,
     .burger::before {

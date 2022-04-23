@@ -409,8 +409,6 @@ body {
     left: 0;
     opacity: 0;
     visibility: hidden;
-    /* overflow-x: hidden;
-    overflow-y: auto; */
     transition: all 0.8s ease 0s;
 }
 
@@ -421,11 +419,8 @@ body {
 
 .popup__body {
     position: relative;
-    /* top: 52px; */
-    left: -52px;
     width: 100%;
     max-width: 952px;
-    height: 552px;
     margin: auto;
     background: #FAFAFA;
     border-radius: 9px;
@@ -451,17 +446,17 @@ body {
 .popup__inner {
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
 }
 
 .popup__img {
-    width: 54%;
+    width: 100%;
     max-width: 500px;
     height: 100%;
+    border-radius: 9px;
 }
 
 .popup__info {
-    width: 42%;
+    width: 41%;
     margin-top: 50px;
 }
 

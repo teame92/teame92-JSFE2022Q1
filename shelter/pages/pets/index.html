@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <title>Pets</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <div class="wrapper">
             <div class="header__inner">
@@ -41,73 +42,32 @@
                     <h3 class="section__title section__title-center">Our friends who<br> are looking for a house</h3>
                     <div class="our-friends__slider">
                         <ul class="cards__slider">
-                            <li class="card">
-                                <img src="../../assets/images/katrine.png" alt="pet-katrine" class="img__pet">
-                                <p class="card__title">Katrine</p>
-                                <a href="#" class="btn btn-white">Learn more</a>
-                            </li>
-                            <li class="card">
-                                <img src="../../assets/images/jennifer.png" alt="pet-jennifer" class="img__pet">
-                                <p class="card__title">Jennifer</p>
-                                <a href="#" class="btn btn-white">Learn more</a>
-                            </li>
-                            <li class="card">
-                                <img src="../../assets/images/woody.png" alt="pet-woody" class="img__pet">
-                                <p class="card__title">Woody</p>
-                                <a href="#" class="btn btn-white">Learn more</a>
-                            </li>
-                            <li class="card">
-                                <img src="../../assets/images/sophia.png" alt="pet-woody" class="img__pet">
-                                <p class="card__title">Sophia</p>
-                                <a href="#" class="btn btn-white">Learn more</a>
-                            </li>
-                            <li class="card">
-                                <img src="../../assets/images/timmy.png" alt="pet-woody" class="img__pet">
-                                <p class="card__title">Timmy</p>
-                                <a href="#" class="btn btn-white">Learn more</a>
-                            </li>
-                            <li class="card">
-                                <img src="../../assets/images/charly.png" alt="pet-woody" class="img__pet">
-                                <p class="card__title">Charly</p>
-                                <a href="#" class="btn btn-white">Learn more</a>
-                            </li>
-                            <li class="card">
-                                <img src="../../assets/images/scarlet.png" alt="pet-woody" class="img__pet">
-                                <p class="card__title">Scarlet</p>
-                                <a href="#" class="btn btn-white">Learn more</a>
-                            </li>
-                            <li class="card">
-                                <img src="../../assets/images/freddie.png" alt="pet-woody" class="img__pet">
-                                <p class="card__title">Freddie</p>
-                                <a href="#" class="btn btn-white">Learn more</a>
-                            </li>
                         </ul>
                         <div class="popup">
                             <div class="popup__body">
                                 <button class="btn-round btn-round__popup"></button>
                                 <div class="popup__inner">
-                                    <img src="../../assets/images/jennifer.png" alt="pet-jennifer" class="popup__img">
+                                    <img src="" alt="" class="popup__img">
                                     <div class="popup__info">
-                                        <h3 class="section__title popup__title">Jennifer</h3>
-                                        <h4 class="popup__subtitle">Dog - Labrador</h4>
-                                        <p class="popup__text">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house
-                                            if she has all of her favorite toys.</p>
+                                        <h3 class="section__title popup__title"></h3>
+                                        <h4 class="popup__subtitle"></h4>
+                                        <p class="popup__text"></p>
                                         <ul class="popup__list">
-                                            <li><b>Age:</b> 2 months</li>
-                                            <li><b>Inoculations:</b> none</li>
-                                            <li><b>Diseases:</b> none</li>
-                                            <li><b>Parasites:</b> none</li>
+                                            <li><b>Age:</b> <span></span></li>
+                                            <li><b>Inoculations:</b> <span></span></li>
+                                            <li><b>Diseases:</b> <span></span></li>
+                                            <li><b>Parasites:</b> <span></span></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="slider__controls">
-                            <button class="btn-round btn-round__slider" disabled="">&lt;&lt;</button>
-                            <button class="btn-round btn-round__slider" disabled="">&lt;</button>
+                            <button class="btn-round btn-round__slider btn__first" disabled="">&lt;&lt;</button>
+                            <button class="btn-round btn-round__slider btn__prev" disabled="">&lt;</button>
                             <span class="btn-round btn-round__slider page">1</span>
-                            <button class="btn-round btn-round__slider">&gt;</button>
-                            <button class="btn-round btn-round__slider">&gt;&gt;</button>
+                            <button class="btn-round btn-round__slider btn__next">&gt;</button>
+                            <button class="btn-round btn-round__slider btn__last">&gt;&gt;</button>
                         </div>
                     </div>
                 </div>
@@ -133,6 +93,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="text/javascript" src="../../assets/pets.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>

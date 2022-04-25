@@ -86,6 +86,15 @@ body {
     font-family: "Georgia", sans-serif;
 }
 
+.body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.scroll {
+    overflow: hidden;
+}
+
 .header {
     position: absolute;
     z-index: 1;
@@ -104,6 +113,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
+}
+
+.logo {
+    transition: 0.2s ease-in-out;
+}
+
+.logo__hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .logo a {
@@ -164,6 +182,78 @@ body {
     background-color: #F1CDB3;
     opacity: 0;
     transition: opacity .1s linear;
+}
+
+.burger__section {
+    width: 100%;
+    height: 100vh;
+    background: rgba(41, 41, 41, 0.6);
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.burger__section-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.burger__wrapper {
+    position: fixed;
+    right: -100%;
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    background-color: #292929;
+    transition: 0.5s ease-in-out;
+    padding: 30px 10px 0;
+}
+
+.burger__wrapper-open {
+    right: 0;
+}
+
+.burger__section .header__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+}
+
+.burger__section .logo {
+    width: 100%;
+    max-width: 186px;
+}
+
+.burger__section .header__navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.burger__section .burger {
+    display: none;
+}
+
+.burger__section .navbar {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.burger__section .navbar li:not(:first-child) {
+    margin-left: 0;
+    margin-top: 40px;
+}
+
+.burger__section .navbar__link {
+    font-size: 32px;
 }
 
 .active__link {
@@ -323,6 +413,11 @@ body {
     align-items: center;
 }
 
+.tns-outer {
+    width: 100%;
+    max-width: 990px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -331,6 +426,9 @@ body {
     background: #FAFAFA;
     border-radius: 9px;
     padding-bottom: 30px;
+    max-width: 270px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -409,8 +507,6 @@ body {
     left: 0;
     opacity: 0;
     visibility: hidden;
-    /* overflow-x: hidden;
-    overflow-y: auto; */
     transition: all 0.8s ease 0s;
 }
 
@@ -421,11 +517,8 @@ body {
 
 .popup__body {
     position: relative;
-    /* top: 52px; */
-    left: -52px;
     width: 100%;
     max-width: 952px;
-    height: 552px;
     margin: auto;
     background: #FAFAFA;
     border-radius: 9px;
@@ -451,17 +544,17 @@ body {
 .popup__inner {
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
 }
 
 .popup__img {
-    width: 54%;
+    width: 100%;
     max-width: 500px;
     height: 100%;
+    border-radius: 9px;
 }
 
 .popup__info {
-    width: 42%;
+    width: 41%;
     margin-top: 50px;
 }
 
@@ -836,6 +929,9 @@ body {
         max-width: 430px;
         margin: 0 0 78px;
     }
+    .tns-outer {
+        max-width: 580px;
+    }
     .section__inner-help {
         padding: 0;
     }
@@ -902,7 +998,6 @@ body {
         display: none;
     }
     .popup__body {
-        height: 350px;
         max-width: 630px;
         left: 0;
     }
@@ -994,6 +1089,12 @@ body {
     }
     .our-friends__slider {
         margin: 42px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 270px;
+    }
+    .tns-outer {
+        max-width: 270px;
     }
     .cards__slider {
         justify-content: center;
@@ -1002,7 +1103,6 @@ body {
         display: none;
     }
     .popup__body {
-        height: 341px;
         max-width: 240px;
     }
     .btn-round__popup {
@@ -1130,10 +1230,6 @@ body {
     }
     .pets {
         max-width: 260px;
-    }
-    .our-friends__slider {
-        justify-content: center;
-        flex-wrap: wrap;
     }
     .btn-round__slider {
         order: 1;

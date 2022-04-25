@@ -119,6 +119,11 @@ body {
     transition: 0.2s ease-in-out;
 }
 
+.logo__hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .logo a {
     display: flex;
     flex-direction: column;
@@ -408,6 +413,11 @@ body {
     align-items: center;
 }
 
+.tns-outer {
+    width: 100%;
+    max-width: 990px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -416,6 +426,9 @@ body {
     background: #FAFAFA;
     border-radius: 9px;
     padding-bottom: 30px;
+    max-width: 270px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -914,6 +927,9 @@ body {
         max-width: 430px;
         margin: 0 0 78px;
     }
+    .tns-outer {
+        max-width: 580px;
+    }
     .section__inner-help {
         padding: 0;
     }
@@ -980,7 +996,6 @@ body {
         display: none;
     }
     .popup__body {
-        height: 350px;
         max-width: 630px;
         left: 0;
     }
@@ -1072,6 +1087,12 @@ body {
     }
     .our-friends__slider {
         margin: 42px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 270px;
+    }
+    .tns-outer {
+        max-width: 270px;
     }
     .cards__slider {
         justify-content: center;
@@ -1080,7 +1101,6 @@ body {
         display: none;
     }
     .popup__body {
-        height: 341px;
         max-width: 240px;
     }
     .btn-round__popup {
@@ -1208,10 +1228,6 @@ body {
     }
     .pets {
         max-width: 260px;
-    }
-    .our-friends__slider {
-        justify-content: center;
-        flex-wrap: wrap;
     }
     .btn-round__slider {
         order: 1;

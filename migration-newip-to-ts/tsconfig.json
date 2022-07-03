@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "target": "es2015",
+      "noImplicitAny": true,
+      "preserveConstEnums": true,
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true  
+    },
+    "lib": ["es2015"]
+  }

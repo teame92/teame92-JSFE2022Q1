@@ -1,5 +1,8 @@
 import Loader from './loader';
 
+export interface IAPI {
+    apiKey?: string;
+}
 class AppLoader extends Loader {
     constructor() {
         super('https://newsapi.org/v2/', {

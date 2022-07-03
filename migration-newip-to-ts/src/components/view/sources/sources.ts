@@ -1,15 +1,25 @@
 import './sources.css';
 
+export interface ISource {
+    category: string,
+    country: string,
+    description: string,
+    id: string,
+    language: string,
+    name: string,
+    url: string
+}
+
 class Sources {
-    draw(data) {
+    draw(data: Array<ISource>) {
         const fragment = document.createDocumentFragment();
-        const sourceItemTemp = document.querySelector('#sourceItemTemp');
+        const sourceItemTemp = document.querySelector('#sourceItemTemp') as HTMLTemplateElement;
 
-        data.forEach((item) => {
-            const sourceClone = sourceItemTemp.content.cloneNode(true);
+        data.forEach((item: ISource) => {
+            const sourceClone: Node = <HTMLElement>sourceItemTemp.content.cloneNode(true);
 
-            sourceClone.querySelector('.source__item-name').textContent = item.name;
-            sourceClone.querySelector('.source__item').setAttribute('data-source-id', item.id);
+            (<HTMLElement>sourceClone).querySelector('.source__item-name').textContent = item.name;
+            (<HTMLElement>sourceClone).querySelector('.source__item').setAttribute('data-source-id', item.id);
 
             fragment.append(sourceClone);
         });

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <title>Pets</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="../main/index.html">
+                        <h1 class="logo__title">Cozy House</h1>
+                        <span class="logo__subtitle">Shelter for pets in Boston</span>
+                    </a>
+                </div>
+                <nav class="header__navbar">
+                    <span class="burger">
+                        <span class="burger__line"></span>
+                    </span>
+                    <ul class="navbar">
+                        <li><a href="../main/index.html" class="navbar__link">About the shelter</a></li>
+                        <li><a href="#" class="navbar__link active__link">Our pets</a></li>
+                        <li><a href="../main/index.html#help" class="navbar__link">Help the shelter</a></li>
+                        <li><a href="#footer" class="navbar__link">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section section__grey" id="our-friends">
+            <div class="wrapper">
+                <div class="section__inner-our-friends">
+                    <h3 class="section__title section__title-center">Our friends who<br> are looking for a house</h3>
+                    <div class="our-friends__slider">
+                        <ul class="cards__slider">
+                        </ul>
+                        <div class="popup">
+                            <div class="popup__body">
+                                <button class="btn-round btn-round__popup"></button>
+                                <div class="popup__inner">
+                                    <img src="" alt="" class="popup__img">
+                                    <div class="popup__info">
+                                        <h3 class="section__title popup__title"></h3>
+                                        <h4 class="popup__subtitle"></h4>
+                                        <p class="popup__text"></p>
+                                        <ul class="popup__list">
+                                            <li><b>Age:</b> <span></span></li>
+                                            <li><b>Inoculations:</b> <span></span></li>
+                                            <li><b>Diseases:</b> <span></span></li>
+                                            <li><b>Parasites:</b> <span></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__controls">
+                            <button class="btn-round btn-round__slider btn__first" disabled="">&lt;&lt;</button>
+                            <button class="btn-round btn-round__slider btn__prev" disabled="">&lt;</button>
+                            <span class="btn-round btn-round__slider page">1</span>
+                            <button class="btn-round btn-round__slider btn__next">&gt;</button>
+                            <button class="btn-round btn-round__slider btn__last">&gt;&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="wrapper">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <div class="contacts">
+                        <h3 class="footer__title">For questions and suggestions</h3>
+                        <a href="mailto:email@shelter.com" class="footer__link footer__link-email">email@shelter.com</a>
+                        <a href="tel:+136745677554" class="footer__link footer__link-tel">+13 674 567 75 54</a>
+                    </div>
+                    <div class="address">
+                        <h3 class="footer__title">We are waiting for your visit</h3>
+                        <a href="https://goo.gl/maps/tV8bBWe4XrYov5bp9" class="footer__link footer__link-address1" target="_blank">1 Central Street, Boston (entrance from the store)</a>
+                        <a href="https://goo.gl/maps/tV8bBWe4XrYov5bp9" class="footer__link footer__link-address" target="_blank">18 South Park, London </a>
+                    </div>
+                </div>
+                <img class="footer-puppy" src="../../assets/images/footer-puppy.png" alt="footer-puppy">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="text/javascript" src="../../assets/pets.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

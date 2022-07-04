@@ -1,6 +1,6 @@
 import AppLoader from './appLoader';
-import { IDarw } from "../view/appView";
-import { IAppData } from "../view/appView";
+import { IDarw } from '../view/appView';
+import { IAppData } from '../view/appView';
 
 class AppController extends AppLoader {
     getSources(callback: () => void) {

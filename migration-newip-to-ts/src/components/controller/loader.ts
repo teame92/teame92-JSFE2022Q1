@@ -1,5 +1,5 @@
 import { IAPI } from "./appLoader";
-import { IDarw } from "../view/appView";
+import { CallbackType } from './controller'
 class Loader {
     baseLink: string;
     options: IAPI;
@@ -8,9 +8,9 @@ class Loader {
         this.options = options;
     }
 
-    getResp(
+    getResp<T>(
         { endpoint = 'string', options = {} },
-        callback = () => {
+        callback: CallbackType<T> = () => {
             console.error('No callback for GET response');
         }
     ) {
@@ -38,11 +38,11 @@ class Loader {
         return url.slice(0, -1);
     }
 
-    load(method: string, endpoint: string, callback: (data: IDarw) => void, options: IAPI) {
+    load<T>(method: string, endpoint: string, callback: CallbackType<T>, options: IAPI) {
         fetch(this.makeUrl(options, endpoint), { method })
             .then(this.errorHandler)
             .then((res) => res.json())
-            .then((data: IDarw) => callback(data))
+            .then((data: T) => callback(data))
             .catch((err) => console.error(err));
     }
 }

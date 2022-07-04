@@ -1,7 +1,7 @@
 import News from './news/news';
 import Sources from './sources/sources';
 import { IData } from './news/news';
-import {ISource} from './sources/sources';
+import { ISource } from './sources/sources';
 export interface IAppData {
     status: string,
     totalResults: string,

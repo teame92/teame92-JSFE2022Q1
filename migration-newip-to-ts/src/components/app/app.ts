@@ -1,7 +1,7 @@
 import AppController from '../controller/controller';
 import { AppView } from '../view/appView';
-import { IDarw } from '../view/appView';
-import { IAppData } from '../view/appView';
+import { IDarw, IAppData } from '../interfaces/interface';
+
 class App {
   controller: AppController;
 

@@ -1,17 +1,6 @@
 import News from './news/news';
 import Sources from './sources/sources';
-import { IData } from './news/news';
-import { ISource } from './sources/sources';
-export interface IAppData {
-  status: string;
-  totalResults: string;
-  articles: Array<IData>;
-}
-
-export interface IDarw {
-  sources: Array<ISource>;
-  status: string;
-}
+import { ISource, IData, IDarw, IAppData } from '../interfaces/interface';
 
 export class AppView {
   news: News;

@@ -1,14 +1,5 @@
 import './sources.css';
-
-export interface ISource {
-  category: string;
-  country: string;
-  description: string;
-  id: string;
-  language: string;
-  name: string;
-  url: string;
-}
+import { ISource } from '../../interfaces/interface';
 
 class Sources {
   draw(data: Array<ISource>) {

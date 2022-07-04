@@ -1,19 +1,5 @@
 import './news.css';
-
-export interface ISourceNews {
-  id: string;
-  name: string;
-}
-export interface IData {
-  author: string | null;
-  content: string;
-  description: string;
-  publishedAt: string;
-  source: ISourceNews;
-  title: string;
-  url: string;
-  urlToImage: string;
-}
+import { IData } from '../../interfaces/interface';
 class News {
   draw(data: Array<IData>) {
     const news = data.length >= 10 ? data.filter((_item: IData, idx: number) => idx < 10) : data;

@@ -54,14 +54,14 @@ const baseConfig = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
-    // new CopyPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(__dirname, './src/assets'),
-    //       to: path.resolve(__dirname, './dist/assets')
-    //     },
-    //   ],
-    // }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, './src/assets'),
+          to: path.resolve(__dirname, './dist/assets')
+        },
+      ],
+    }),
     
   ],
 };

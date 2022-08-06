@@ -1,5 +1,6 @@
 import { MAX_CARS_PER_PAGE, MAX_WINNERS_PER_PAGE } from "./constants";
 import { ICarBody, ICarWinner, ICarWinnerUpdate } from "./components/interfaces";
+import { stopDriving } from "./animation";
 
 const url = 'http://127.0.0.1:3000';
 const garage = `${url}/garage`;
@@ -95,6 +96,9 @@ export const drive = async (id: number) => {
   const response = await fetch (`${engine}?id=${id}&status=drive`, {
     method: 'PATCH'
   });
+  if (response.status === 500) {
+    stopDriving(id);
+  }
   return response.status !== 200 ? { 'success': false } : response.json();
 }
 
